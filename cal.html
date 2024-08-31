@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Calculator</h1>
+   <video autoplay loop muted plays-inline class="backvideo">
+      <source src="">
+   </video>
+      <div id="calci">
+         <div id="info">
+            <form>
+               <div id="output">
+                  <input type="text" id='res'>
+               </div>
+                  <div class="btn">
+                     <input type="button" value='C' class="btn-item"onclick="Clear()" id="clear">
+                     <input type="button" value='←' class="btn-item"onclick="Back()" id="backspace">
+                     <input type="button" value='%' class="btn-item"onclick="Solve('%')">
+                     <input type="button" value='/' class="btn-item"onclick="Solve('/')">
+                     <br>
+                     <input type="button" value='7' class="btn-item"onclick="Solve('7')">
+                     <input type="button" value='8' class="btn-item"onclick="Solve('8')">
+                     <input type="button" value='9' class="btn-item"onclick="Solve('9')">
+                     <input type="button" value='x' class="btn-item"onclick="Solve('*')">
+                     <br>
+                     <input type="button" value='4' class="btn-item"onclick="Solve('4')">
+                     <input type="button" value='5' class="btn-item"onclick="Solve('5')">
+                     <input type="button" value='6' class="btn-item"onclick="Solve('6')">
+                     <input type="button" value='-' class="btn-item"onclick="Solve('-')">
+                     <br>
+                     <input type="button" value='1' class="btn-item"onclick="Solve('1')">
+                     <input type="button" value='2' class="btn-item"onclick="Solve('2')">
+                     <input type="button" value='3' class="btn-item"onclick="Solve('3')">
+                     <input type="button" value='+' class="btn-item"onclick="Solve('+')">
+                     <br>
+                     <input type="button" value='00' class="btn-item"onclick="Solve('00')">
+                     <input type="button" value='0' class="btn-item"onclick="Solve('0')">
+                     <input type="button" value='.' class="btn-item"onclick="Solve('.')">
+                     <input type="button" value='=' class="btn-item"onclick="Result()">
+                  </div>
+            </form>
+         </div>
+      </div>
+   <script src='op.js'></script>
+</body>
+</html>
